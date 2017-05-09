@@ -5,32 +5,32 @@ output those values to a CSV file.
 
 ### Create a directory for the codebase
  ``` sh
- mkdir Simulator
+> mkdir Simulator
  ```
  
  ### Navigate to the new directory
   ``` sh
- cd Simulator 
+> cd Simulator 
   ```
 
 ### Clone the repository to your local machine
  ``` sh
- git clone https://github.com/cherrera2001/CSVTimeSeriesGen.git
+> git clone https://github.com/cherrera2001/CSVTimeSeriesGen.git
  ```
  
  ### Perform a maven clean install from the root of the codebase
  ``` sh
-mvn clean install
+> mvn clean install
  ```
  
  ### An uber jar should be created in the /target directory
  ``` sh
- > cd target
+> cd target
  ```
  
  ### Execute the jar with the following command
  ``` sh
- > java -jar uber-tsGeneratedCsv-1.0-SNAPSHOT.jar ./basicConfig.json 
+> java -jar uber-tsGeneratedCsv-1.0-SNAPSHOT.jar ./basicConfig.json 
  ```
  
  This will generate a CSV file with all the defaults for 1 hour of data. You can modify the generation configuration by 
@@ -39,5 +39,5 @@ mvn clean install
  
  ### To see all the options run the following command
  ``` sh
- > java -jar uber-tsGeneratedCsv-1.0-SNAPSHOT.jar
+> java -jar uber-tsGeneratedCsv-1.0-SNAPSHOT.jar
  ```
