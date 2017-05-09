@@ -81,7 +81,7 @@ object CsvMain
     var rowCount = 0
     var reset = true
     var fileIter = 0
-    var file = new File(basePath + fileName + "-" + fileIter +  " .csv")
+    var file = new File(basePath + fileName + "-" + fileIter +  ".csv")
     var bw = new BufferedWriter(new FileWriter(file))
     val formatter = java.text.NumberFormat.getNumberInstance(Locale.US);
     formatter.setMaximumFractionDigits(3);
@@ -164,7 +164,7 @@ object CsvMain
       // Check if we have written 100000 rows
       if (rowCount == rowsPerFile) {
         fileIter += 1;
-        file = new File(basePath + fileName + "-" + fileIter + " .csv")
+        file = new File(basePath + fileName + "-" + fileIter + ".csv")
         bw = new BufferedWriter(new FileWriter(file))
         reset = true
         rowCount = 0
